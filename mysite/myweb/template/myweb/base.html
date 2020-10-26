@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GAME SECRET</title>
+        <link rel="icon" type="image/x-icon" href="https://startbootstrap.github.io/startbootstrap-agency/assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://startbootstrap.github.io/startbootstrap-agency/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Game Secret</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        {% if user.is_anonymous %}
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/login">Login</a></li>
+                        {% else %}
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger">Hi {{user}}!!</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/logout">Logout</a></li>
+                        {% endif %}
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Category</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Define</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" style="background-image:url(https://images3.alphacoders.com/610/610747.jpg)"
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Game Secret!</div>
+                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/login">Login Now</a>
+            </div>
+        </header>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">GAME CATEGORY</h2>
+                    <h3 class="section-subheading text-muted">Easy Game Scret</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://wallpapercave.com/wp/wp2143882.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">ROV</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคเล่นให้ได้ MVP ทุกตา.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://wallpapercave.com/wp/wp3276758.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">PUBG Mobile</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคเทพช่วยให้เป็นโปรเพลย์เยอร์.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://wallpapercave.com/wp/wp5254273.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Free Fire</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคการเล่นให้ได้ที่ 1 ทุกตา.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://s3.ca-central-1.amazonaws.com/setwallpapers.com.images/preview/27b9f664162e820a4539132877d8cb2d.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Among Us</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคปั่นหัวCrewmateเมื่อเป็นimpostor.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images.wallpapersden.com/image/download/call-of-duty-mobile-game_65121_5120x2880.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Call Of Duty</div>
+                                <div class="portfolio-caption-subheading text-muted">ตั้งค่าอย่างไรให้เทพ ยิงแม่น เล่นง่าย.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://wallpapercave.com/wp/wp4516301.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Mobile Legends</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคเล่นให้เทพ ต้องรู้อะไร เล่นอย่างไร.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images7.alphacoders.com/996/996250.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Fortnite Battle Royale</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคสำหรับมือใหม่ รู้ไว้ไม่เสียหาย.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images6.alphacoders.com/992/992033.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">APEX Legends</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคเล่นยังไงให้ชนะบ่อยขึ้น.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://www.xtrafondos.com/wallpapers/todos-los-personajes-de-valorant-5943.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Valorant</div>
+                                <div class="portfolio-caption-subheading text-muted">วิธีตั้งค่ายังไงให้ยิงแม่น.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModa20">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images4.alphacoders.com/553/553496.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Overwatch</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคเล่นให้เก่งขึ้นสำหรับคนอยากเป็นโปร.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModa21">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://wallpapercave.com/wp/wp1838918.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">GTA San</div>
+                                <div class="portfolio-caption-subheading text-muted">เทคนิคจบเกมภายใน26นาที.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModa22">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://images7.alphacoders.com/421/421641.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Grand Theft Auto V</div>
+                                <div class="portfolio-caption-subheading text-muted">สิ่งที่ผู้เล่นใหม่ควรทำเมื่อเริ่มเล่น.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Game Definition</h2>
+                    <h3 class="section-subheading text-muted">เกม เพื่อความสนุกสนานบันเทิง ฝึกทักษะ</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"> เกม เป็นลักษณะของกิจกรรมของมนุษย์เพื่อประโยชน์อย่างใดอย่างหนึ่ง เช่น เพื่อความสนุกสนานบันเทิง เพื่อฝึกทักษะ และเพื่อการเรียนรู้ เป็นต้น และในบางครั้งอาจใช้เพื่อประโยชน์ทางการศึกษาได้
+    เกมประกอบด้วยเป้าหมาย กฎเกณฑ์ การแข่งขันและปฏิสัมพันธ์ เกมมักจะเป็นการแข่งขันทางจิตใจหรือด้านร่างกาย หรือทั้งสองอย่างรวมกัน ซึ่งส่งผลให้เกิดพัฒนาการของทักษะ ใช้เป็นรูปแบบของการออกกำลังกาย หรือการศึกษา บทบาทสมมุติและจิตศาสตร์ เป็นต้น
+
+    เกมเป็นกิจกรรมของมนุษย์ตั้งแต่อดีตถึงปัจจุบัน Royal Game of Ur, Senet และ Mancala เป็นเกมที่ได้ชื่อว่าเก่าแก่ที่สุดในประวัติศาสตร์มนุษย์ โดยสามารถย้อนไปได้ถึง 2,600 ปีก่อนคริสตกาล.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"> --เกี่ยวกับเรา-- <h2>
+                    <h3 class="section-subheading text-muted">เว็บไซต์นี้จัดทำขึ้นเพื่อจะช่วยให้ทุกๆคนเล่นเกมต่างได้อย่างมีประสิทธิภาพสูงสุด เราจะนำเทคนิค เคล็ดลับต่างของทุกๆเกม มารวบรวมไว้นะเว็บไซต์นี้ เช่นเกม rov,pubg,mobile legends,among us,free fire,call of duty เป็นต้น หวังว่าเพื่อนทุกคนจะชอบกันนะ.</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+         <section class="page-section" id="contact" style="background-image:url(https://www.solidbackgrounds.com/images/1280x720/1280x720-white-solid-color-background.jpg)">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">ช่องทางการติดต่อสื่อสาร</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">หากต้องการติดต่อสื่อสารกับเรา ติดต่อได้ที่ข้างล่างนี้เลย!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>099-999-9999</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
+                        <a class="d-block" href="mailto:anuchit.ar.62@ubu.ac.th">anuchit.ar.62@ubu.ac.th</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © Anuchit Artdet 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/anuchit.artdet"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/anuchit0505/pythonanywhere"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="#services">นโยบายความเป็นส่วนตัว</a>
+                        <a href="#services">ข้อตกลงในการใช้งาน</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Garena ROV</h2>
+                                    <p class="item-intro text-muted">เทคนิคเล่นได้MVPทุกตา!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://s.isanook.com/ga/0/ud/212/1062009/image-rov-04.jpg" alt="" />
+                                    <p>เกม ROV เป็นเกมแนว Mobile MOBA ตอนนี้กำลังได้รับความนิยม ก็เลยอยากช่วยให้ทุกคนเล่นเก่งขึ้น!
+
+เสน่ห์ของเกม ROV เกมนี้ที่ทำให้คนนิยมเล่นกันมากก็เพราะว่าเป็นเกมแนว Mobile MOBA ที่ไม่จำเป็นต้องสะสมเลเวลให้มากจนเกินไปเล่นได้ทุกที่สะดวกและมี แต่คนชอบเพราะไม่จำเป็นต้องไปนั่งเล่นที่ร้านเน็ตอีกต่อไปจะเล่นอยู่ที่บ้านหรือที่ไหนก็ได้ขอแค่ให้มีเน็ตแรง ๆ เป็นพอ
+ไม่จำเป็นต้องเลือกตัวที่เก่งที่สุดเสมอไปบางคนคิดว่าต้องเลือกเล่น แต่ Murad หรือ Ryoma หรือตัวใหม่ ๆ ที่คิดว่าเจ๋งที่สุดแล้วเท่านั้นถึงจะสามารถเก็บคิลได้ แต่ในความเป็นจริงแล้วไม่จำเป็นเลยครับผมเองเล่นตัวไหนก็ได้ MVP เสมอเพราะคะแนน MVP ไม่จำเป็นต้องมาจากยอด Kill เสมอไปคนเราถ้าเล่นเป็นเล่นตัวไหนก็เทพได้ส่วนพวกที่ผู้ป (Noob) เล่นไม่เป็นและไม่ศึกษาต่อให้เล่นแวนหรือตัวที่เทพง่ายๆแค่ไหนก็ไม่มีทางเล่นได้เทพและได้ MVP แน่นอนดังนั้นเล่นได้ทุกสายครับสายแท็งค์ผมก็ทำ MVP มาแล้วครับ
+
+เน็ตต้องแรงอันนี้สำคัญมาก ๆ บางคนคิดว่าตัวเองเทพจะเล่นเน็ต 4G ก็น่าจะเทพได้เหมือนกัน แต่ผลก็คือล้มเหลวครับเพราะความเร็วอินเทอร์เน็ตบ้านที่เป็น WiFi ย่อมเร็วกว่ายิ่งบ้านไหนติด Fiber optic ด้วยแล้วยิ่งเร็วไปกันใหญ่ใครเน็ตแรงก็ควบคุมได้เร็วทันใจลดโอกาสถูกฆ่าและเพิ่มโอกาส Kill ได้มากเข้าไปอีก
+
+อย่ายอมแพ้ครึ่งๆกลางๆเกมนี้ยิ่งนับวันก็ยิ่งมี แต่พวกอ่อน ๆ เข้ามาเล่นพอตายบ่อยๆก็อยากจะเลิกอยากจะยอมแพ้ซึ่งส่วนใหญ่มักจะเป็นตอนที่เลเวลตัวละครประมาณ 7-8 ซึ่งผมบอกเลยว่ามันยังสู้ได้ครับเลเวลตัวละครที่จะเทพที่สุดนั้นต้องเกิน 12 ไปแล้วถึงจะเทพเหตุผลก็ดูข้อต่อไปครับ-ทองคือสิ่งที่สำคัญที่สุดฟาร์มทองไว้เยอะ ๆ ฆ่าครีปให้มาก ๆ ฆ่าพวกมอนในป่าเยอะ ๆ แล้วจะได้ทองเยอะ ๆ เมื่อมีทองเยอะก็ซื้อไอเทมโหด ๆ ได้พอมีไอเท็มโหด ๆ เยอะก็ไล่ Kill ง่ายล่ะหลักการมันก็มีแค่นี้ครับ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: smartphonetabletthai</li>
+                                        <li>Category: Mobile MOBA</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Playerunknown's Battlegrounds</h2>
+                                    <p class="item-intro text-muted">เทคนิคเทพช่วยให้เป็นโปรเพลย์เยอร์!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://candid.technology/wp-content/uploads/2019/10/Pubg-11111111111111111111111111111.jpg" alt="" />
+                                    <p>#1 – สวมหมวกอยู่ตลอด
+#2 – ใช้มุมมองบุคคลที่สามให้เป็นประโยชน์
+#3 – ใช้ Bandages (ผ้าก๊อซ) ไม่ใช้ Medkits (ชุดยา) ถ้าหากว่าคุณมีเวลา
+#4 – ระวังการขึ้นบันได
+#5 – ใช้บันไดเป็นจุดซุ่มยิง
+#6 – อย่ารีบยิงศัตรูที่ล้มลง
+#7 – อยู่ใกล้ชิดเพื่อนร่วมทีม
+#8 – ใช้อาวุธให้เหมาะสมกับสถานการณ์
+#9 – ให้เวลากับการยิงในระยะไกล
+#10 – ใช้การวิ่งอัตโนมัติเพื่อให้มือคุณได้พัก
+#11 – อย่าใช้ยานพาหนะเป็นที่กำบัง
+#12 – เพิ่มความระมัดระวังเมื่อใช้ยานพาหนะ
+#13 – ถ้าต้องยิง ให้ยิงที่ยาง</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 20203</li>
+                                        <li>Credit: Bluestacks</li>
+                                        <li>Category: Battle Royale</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Garena Free Fire</h2>
+                                    <p class="item-intro text-muted">เทคนิคการเล่นให้ได้ที่ 1 ทุกตา!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://wallpapercave.com/wp/wp5193152.jpg" alt="" />
+                                    <p>ไปจุดศูนย์กลางของวงกลมขาวให้ไวที่สุด
+ในเกม Garena Free Fire นั้นจุดที่มักจะมีการต่อสู้และการฆ่ากันมากที่สุดจะอยู่ในส่วนของขอบนอกวงขาว เพราะเริ่มเกมมาจะมีเวลาประมาณ 3 นาทีก่อนที่วงขาวจะปรากฏ แน่นอนว่าผู้เล่นส่วนใหญ่มักจะเดินทางไปในจุดต่างๆ แบบอิสระและกระจายกันอยู่รอบนอกของแผนที่หรือจุดสำคัญในการโดดร่มเพื่อฟาร์มไอเทม และเมื่อวงขาวปรากฏก็มักจะพยายามวิ่งเข้าหา ทำให้จุดนอกวงขาวจะเป็นจุดที่อันตรายมากๆ การเลี่ยงรอบนอกของวงขาวและเข้ามาด้านในและจุดศูนย์กลางให้ไวที่สุดถือเป็นเทคนิคการเอาตัวรอดในแบบที่ไม่ต้องปะทะแบบง่ายๆ นั่นเอง
+ถ้าให้พูดถึงเกี่ยวกับการโดดร่มนั้นจะมีอยู่ 2 ส่วนที่ให้สังเกตก่อนโดดคือ ขณะอยู่บนเครื่องบินเมื่อไอคอน “โดดร่ม” ปรากฏ ไม่ควรกดโดดลงมาทันที เพราะผู้เล่นส่วนใหญ่มักจะโดดลงมาทันทีเพราะคิดว่าถึงพื้นก่อนก็ได้อาวุธก่อนและไล่ฆ่าคนก่อน แต่จริงๆ แล้วเป็นความคิดที่ผิดมากๆ เพราะศัตรูในบริเวณใกล้เคียงจะเยอะมากๆ ทำให้โอกาสเสี่ยงต่อการตายสูงแบบสุดๆ
+อีกหนึ่งส่วนก็คือ จุดโดดร่มที่นิยมอย่าง พีค, โรงเก็บเครื่องบิน และโรงสี จุดพวกนี้จะมีคนโดดร่มลงเป็นจำนวนมาก แน่นอนว่าคนยิ่งมากก็ยิ่งทำให้โอกาสในการปะทะสูงและเสี่ยงต่อการตายสูง แนะนำว่าให้โดดร่มลงในจุดที่ไม่ค่อยมีคนหรือบ้านเล็กๆ ตามรอยต่อต่างๆ ซึ่งจุดเหล่านี้คนมักไม่ค่อยโดดลงและมักจะมีไอเทม
+ใน Garena Free Fire ไอเทมประเภท “เห็ด” ถือเป็นส่วนสำคัญมากๆ ในการเล่นเกม เพราะมันจะช่วยทำให้เราตายได้ยากขึ้นและสามารถฟื้นฟูค่า HP ได้อีกด้วย การเก็บเห็ดกินถือเป็นข้อได้เปรียบแบบสุดๆ ในการเล่น ยิ่งค่า EN เต็ม 200 หน่วยก็ยิ่งได้เปรียบเวลาปะทะ อีกอย่างก็คือ เมื่อเราโดนซุ่มยิงเราจะสามารถทนต่อการโจมตีได้ในระดับหนึ่งด้วย
+เทคนิคในการหาเห็ดก็คือ เห็ดส่วนใหญ่มักจะเกิดบริเวณที่มีต้นไม้หรือในป่าและมีหญ้าสูงๆ แน่นอนว่าถ้าเดินไปบริเวณที่มีลักษณะดังกล่าวโอกาสเจอเห็นมีมากถึง 70% เลยทีเดียว ส่วนบริเวณที่เห็ดจะไม่ออกเลยก็จะเป็นบริเวณถนนหรือใจกลางตึกและเมืองใหญ่ๆ
+ถือเป็นพื้นฐานของเกมแนว Battle Royale เลยก็ว่าได้ เพราะถ้าคุณอยู่พื้นที่ที่สูงกว่าศัตรูก็จะทำให้คุณได้เปรียบในเรื่องของระยะการมองเห็น, การยิงตอบโต้ของเป้าหมายและการหลบซ่อนจากการค้นหาของศัตรูได้เป็นอย่างดี โดยพื้นที่สูงที่เหมาะกับการซุ่มใน Garena Free Fire ก็จะเป็นพื้นที่ยอดภูเขา, สะพานใหญ่หรือบนหลังคาบ้าน ซึ่งจุดเหล่านี้ถ้าซุ่มดีๆ หรือนอนราบกับพื้นก็แทบจะมองไม่เห็นตัวเลยทีเดียว แน่นอนว่าเราไม่จำเป็นต้องซุ่มเพื่อโจมตีศัตรูอย่างเดียว แต่เราสามารถซุ่มเพื่อหลบหนีสายตาและรอจังหวะตอนเกมใกล้จบก็ได้เช่นกัน
+เมื่อจำเป็นต้องผ่านพื้นที่โล่งไม่มีอะไรกำบังแนะนำว่าให้กดวิ่งเสมอ ไม่ควรเดินอยู่บริเวณที่โล่งนานๆ เพราะจะทำให้เป็นเป้านิ่งในการโจมตีได้แบบง่ายๆ และเมื่อโดนโจมตีในที่โล่งสิ่งที่ไม่ควรทำก็คือ กดนั่งลงหรือหมอบราบกับพื้นเพราะคุณจะกลายเป็นเป้านิ่งมากกว่าเดิม ให้กดวิ่งแบบยาวที่สุดเท่าที่จะทำได้ หรือกระโดดไปด้วยก็ได้เช่นกันเพื่อทำให้เราไม่เป็นเป้านิ่ง จากนั้นให้วิ่งเข้าหาที่กำบังที่ใกล้ที่สุดในบริเวณนั้น
+ถ้าคุณเล่นในโหมด Solo และต้องการจะอยู่รอดให้ได้นานที่สุด แนะนำว่าไม่ควรใช้รถหรือยานพาหนะในเกมถ้าไม่จำเป็นจริงๆ เพราะเสียงรถใน Garena Free Fire เป็นอะไรที่ดังแบบเวอร์วังมาก แทบจะเป็นการบอกตำแหน่งให้ศัตรูรู้เลยว่าเราอยู่ที่ไหน นอกจากนี้รถใน Garena Free Fire ก็ยังเป็นอะไรที่พังได้แบบง่ายสุดๆ ที่สำคัญเวลาเราขับรถคนเดียวจะทำให้เราไม่สามารถโจมตีสวนคืนได้นั่นเอง การหลีกเลี่ยงการใช้รถจึงเป็นอะไรที่ควรทำมากที่สุดเมื่อเล่นในโหมด Solo
+ทั้งหมดก็เป็นทริคและเทคนิคในการเอาตัวรอดใน Garena Free Fire แบบง่ายๆ โดยไม่ต้องเปลืองเนื้อเปลืองตัวในการปะทะสักเท่าไร แต่ต้องบอกก่อนนะครับว่าการจะได้ที่ 1 แบบไม่ฆ่าใครเลยนั้นเป็นเรื่องยากพอสมควร เพราะอย่างน้อยๆ ต้องเล่นเป็นทีมคอยเกาะเพื่อนและสนับสนุนเพื่อนหรือถ้าเล่นแบบ Solo ก็อาจจะต้องฆ่าอย่างน้อย 1 คนเพื่อให้ได้มาซึ่งที่ 1</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 20203</li>
+                                        <li>Credit: Bluestacks</li>
+                                        <li>Category: Battle Royale</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Among Us</h2>
+                                    <p class="item-intro text-muted">เทคนิคปั่นหัว Crewmate เมื่อคุณเป็น Impostor!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://wallpapercave.com/wp/wp7445961.jpg" alt="" />
+                                    <p>เมื่อคุณเป็น Imposter ไม่มีสิ่งใดสำคัญกว่าความน่าเชื่อถืออีกแล้ว ความน่าเชื่อถือไม่เพียงทำให้คุณไม่โดนโยนลงบ่อลาวาเท่านั้น มันอาจทำให้ Crewmate ฆ่ากันเอง ประหยัดแรง ไม่ต้องลงมือเองให้เสี่ยงด้วย วิธีการสร้างความน่าเชื่อถือที่ง่ายที่สุดคือ “พูดความจริง” อย่าโกหกถ้าไม่จำเป็น เพราะมีโอกาสที่คนอื่นเห็นว่าเราอยู่ไหนเสมอ ถ้าเราโกหกแล้วไม่ตรงกับที่คนอื่นเห็นเราจะโดนสงสัย เว้นเสียแต่ว่าความจริงที่ซ่อนอยู่ในท่อกับเสียบคนตายอันนั้นอย่าเผลอไปพูดล่ะ
+ช่วงต้นเกมที่มีคนพบศพแล้วเรียกประชุม ย่อมต้องมีคนถูกสงสัย เมื่อมีคนบริสุทธิ์ตกเป็นผู้ต้องสงสัย เทคนิคสำคัญไม่ใช่ใส่ไฟให้ทุกคนโหวตผู้บริสุทธิ์ออก แต่เป็นการปกป้องเขาคนนั้น ! คุณอาจจะอ้างว่า เดินผ่านแล้วเห็นเค้าทำภารกิจอยู่ หรือ เห็นเค้าอยู่กับอีกสีหนึ่งแต่ไม่มีใครเป็นอะไรก็ได้ คนที่โดนปกป้องจะเกิดความขอบคุณโดยไม่รู้ตัว ตอนท้ายเกมเค้าอาจปกป้องคุณกลับโดยที่ไม่รู้เลยว่า เห็นกงจักรเป็นดอกบัวซะแล้ว
+เทคนิคดักควายของ Crewmate ที่พบเจอบ่อยมากคือ ล่อให้ Imposter พูดสถานที่ฆ่าเหยื่อออกมาเอง ในการประชุม ถ้าเราเป็น Imposter ไม่ว่าจะโดนไล่ต้อนอย่างไรก็ตามห้ามพูดสถานที่เกิดเหตุออกมาเด็ดขาด เว้นเสียแต่ว่าจะมีคนอื่นพูดขึ้นมาก่อน แล้วเราค่อยกล่าวอ้างตามที่คนอื่นพูด ไม่อย่างนั้นจะโดนประโยค “กูบอกว่า สีเขียวตาย แต่ไม่ได้บอกว่าตายที่ไหน ทำไมมึงรู้ได้ ?”
+ไม่ว่าจะเป็น Imposter หรือไม่ ข้อแก้ตัวอย่าง “กูบริสุทธิ์” เป็นข้อแก้ตัวที่ไร้ประโยชน์ที่สุด เมื่อถูกกล่าวหา ทุกสายตาจะจ้องมาที่เราและไอ้คนกล่าวหาทันที นาทีนี้คือจังหวะที่ต้องเพิ่มความน่าเชื่อถือของตัวเองให้มากกว่าอีกฝ่ายให้ได้ นึกให้ออกว่า ตัวเองยืนอยู่ตรงไหน (เอาให้ห่างจากศพและใกล้ความเป็นจริงมากที่สุด) ถ้าโชคดีจำได้ว่า มีใครเดินผ่านให้อ้างชื่อสีนั้นด้วย ถ้ามันจำเราได้ มันจะเป็นคนช่วยแก้ต่างให้ แต่ถ้ามันจำไม่ได้ เราก็สามารถโบ้ยว่า เฮ้ย ทำไมนายไม่พูดความจริงล่ะ นายเดินผ่านเราไปนะ เพื่อเพิ่มผู้ต้องสงสัยให้คนสับสนเพิ่มขึ้นได้อีกเช่นกัน
+ความได้เปรียบอย่างหนึ่งของ Imposter คือ ศพที่ตายไม่มีเวลาบอกไว้ว่าตายเมื่อไหร่ เมื่อเราฆ่าเหยื่อ ให้เดินอ้อมไปรวมกลุ่มกับผู้เล่นคนอื่น พอมีคนพบศพ เราสามารถเล่นบทคนดีด้วยการบอกว่าสีที่เดินอยู่กับเราบริสุทธิ์ได้ คนพวกนั้นก็พร้อมจะยืนยันว่าเราไม่ใช่ฆาตกรด้วยเพราะเดินมาด้วยกัน
+สมมติว่า เราฆ่าคนนึงต่อหน้าต่อตาพยาน เมื่อเรียกประชุม พยานจะบอกว่า ข้างศพมีเราอยู่ เราเป็นฆาตกร > เราแก้ตัวว่า “กล่าวหากูได้ไง ไม่ใช่มึงหรอกเหรอที่เป็นฆาตกร” เมื่อเกิดเหตุการเช่นนี้ คุณอาจรอดตัวไปได้จากการโหวตครั้งแรก แต่ในการโหวตครั้งต่อไปยังไงก็ไม่รอด เพราะจากสภาพการที่เกิดขึ้น …ไอ้ 1 ใน 2 คนนี้เป็นฆาตกรแน่นอน
+แน่นอนว่าการ Sabotage ทุกอันล้วนมีประโยชน์ต่อ Imposter แต่ทำไมผู้เล่นหลายคนถึงนิยมดับไฟกันล่ะ ? คำตอบคือเมื่อไฟดับ สิ่งที่ Crewmate จะเสียเปรียบที่สุดคือ”ข้อมูล” เราสามารถฆ่าใครซักคนแล้วเดินหนีไป พอซ่อมไฟเสร็จลูกเรือที่เห็นศพพร้อมกันอาจโยนความผิดให้กันเอง อย่างที่บอกไว้ในข้อ 1 ความน่าเชื่อถือในเกมนี้เป็นสิ่งที่สำคัญที่สุดของ Imposter เมื่อไฟดับ ทุกคนก็จะหมดความน่าเชื่อถือเหมือนกันหมดเพราะมองไม่เห็น และมันยากที่จะระบุตัวฆาตกรได้ในความมืดได้</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Client: Thaimetagame</li>
+                                        <li>Category: Adventure</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Call Of Duty</h2>
+                                    <p class="item-intro text-muted">ตั้งค่าอย่างไรให้เทพ ลื่นปรื๊ด ยิงแม่น เล่นงาย!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://uhdwallpapers.xyz/media/images/ori/2020/07/13/call-of-duty-mobile-season-7-4k-hd-wallpaper-3055111594617272.jpg" alt="" />
+                                    <p>ตั้งค่า Call of Duty: Mobile อย่างไรให้เทพ ลื่นปรืด ยิงแม่น เล่นง่าย
+หยุดเสพภาพสวย ปรับ LOW ไว้ก่อน
+ในการเล่นเกมแนว Multiplayer นั้นการเสพภาพสวยนั้นอาจจะไม่ใช้ ปัจจัยหลักอย่างแน่นอน เพราะบางที่เอฟเฟคสุดอลังการอาจจะมาบดบังการมองเห็นในส่วนต่างๆ ไม่ว่าจะเป็นศัตรู หรือ ระเบิด นอกจากนั้นยังจะทำให้แบตเตอรี่เราลดลงอย่างรวดเร็ว และ Frame Rate เราตกอีกด้วย ดังนั้นปรับ Graphic ให้ Low ที่สุดไว้ก่อนไม่เสียหายอย่างแน่นอน
+ตั้งค่า Call of Duty: Mobile อย่างไรให้เทพ ลื่นปรืด ยิงแม่น เล่นง่าย
+อีกจุดเด่นของการปรับภาพ Low นั้นก็คือเราจะสามารถใช้ทรัพยากรของเครื่องมาทำให้เกมของเราลิ่นขึ้นกันอย่างเต็มที่ ถ้าเปิดภาพเป็น High และจังหวะที่ศัตรูโผล่มาแล้วกระตุกแย่น่าดู
+ปรับความเร็วในการหมุนกล้องให้เข้ากับเรา
+ความเร็วในการหมุนกล้องนั้นถือว่าเป็นอีกหนึ่งส่วนที่สำคัญที่สุด เพราะจะส่งผลในเรื่องความแม่นยำของการเล็ง หรือการควบคุมแรงถีบของปืนโดยตรง ดังนั้นเราต้องห่ค่าที่เหมาะสมก่อนที่จะไปลุยในโหมด Rank หรือการเล่นอย่างจริงจัง ในการแข่งขัน โดยเทคนิคในการหาความเร็วในการหมุนกล้องที่เหมาะกับเรานั้นง่ายนิดเดียว นั้นก็คือ ค่อยๆ ปรับไปเรื่อย จนความจะได้ความเร็วที่พอใจ อาจจะใช้เวลาสักหน่อย แต่ถ้าได้แล้วจะทำให้คุณเทพขึ้นอย่างเห็นได้ชัดอย่างแน่นอน
+ปรับระบบการยิงเป็น Advanced fire
+ในตอนแรกสุดนั้นตัวเกมนั้นจะปรับการตั้งค่ามาให้เป็น Simple Fire มาให้ตั้งแต่แรก โดย Simple Fire นั้นจะเป็นยิงศัตรูโดยอัตโนมัติ เมื่อมีศัตรูเข้ามาอยู่ในระยะเป้าของเรา แต่บางครั้งการกดยิงเองอาจจะทำได้เร็วกว่าการยิงแบบอัตโนมัติ ดังนั้นการตั้งค่าแบบ Advanced fire จะเป็นประโยชน์มากกว่าอย่างแน่นอน โดยเราก็สามารถตั้งค่าภายในได้อีกทีหนึ่งด้วยว่า เวลาเรากดยิง จะให้ขึ้นลำกล้องก่อนยิง หรือ จะยิงเลย แล้วเรากดขึ้นลำกล้องเอง
+ฝึก Gyroscope ไว้ไม่เสียหาย
+Gyroscope อาจจะดูยากสำหรับใครบางคนไปนิดหน่อย แต่ถ้าสามารถฝึกได้จนคล่องแล้วละก็ไม่ว่าปืนจะมีแรงถีบแค่ไหนคุณก็สามาถคุมได้อย่างอยู่หมัดอย่างแน่นอน โดย Gyroscope นั้นก็คือการควบคุมมุมกล้องของเราตามการขยับของโทรศัพท์ โดยการเล่นทั้ง Sniper , rifle  และ SMG นั้นสามารถใช้ได้กับการตั้งค่านี้ทั้สิ้น อย่างไรก็ตามส่วนนี้อาจจะต้องใช้เวลาในการฝึกนานพอสมควร แต่ถ้ารู้สึกว่าไม่ไหว ไม่ถนัด ก็อย่าฝืนจะดีที่ดี
+เป็นอย่างไรกันบ้างกับเทคนิคการตั้งค่าดีๆ ที่เราเอามาแนะนำกันไว้วันนี้ หลายๆ ส่วนเรอาจจะต้องใช้เวลาในการปรับตัวกันสักพักหนึ่ง แต่รับรองได้เลยว่าหลังจากที่ปรับตัวได้แล้ว การเล่นเกมของคุณนั้นจะง่ายขึ้น และ ฝีมือของคุณจะเทพขึ้นมาอย่างเห็นได้ชัดเลยทีเดียว</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Bluestacks</li>
+                                        <li>Category: Battle Royale</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Mobile Legends: Bamg Bang</h2>
+                                    <p class="item-intro text-muted">เทคนิคเล่นให้เทพ ต้องรู้อะไร เล่นอย่างไร!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://wallpapercave.com/wp/wp4154340.png" alt="" />
+                                    <p>วิธีเล่นนักฆ่า เริ่มเกมมาให้หลบเข้าป่าเข้าดงอย่างเดียวเลยครับ ไม่ต้องไปช่วยดันป้อม อะไรทั้งนั้น ฟาร์มตีมอนในป่าอย่างเดียว โดยเริ่มจากมอนที่พลังน้อยที่สุดก่อน พยายามวิ่งหนีเข้าป่าตีมอนอัพเลเวลให้เร็วที่สุดปะทะจังเกิ้ลไปเรื่อยๆ ไม่ต้องสนใจทีมมากว่าใครจะเป็นจะตายครับ ทำเลเวลให้ขึ้นไวๆ มากที่สุดจนเลเวลเริ่มได้เปรียบคู่ต่อสู้แล้วค่อยออกมาช่วยสู้ เวลาสู้ให้เน้นหลบในป่ารอลอบโจมตีอย่างเดียวครับ ห้ามออกไปปะทะกับใครซึ่งๆ หน้าเด็ดขาด และห้ามคลุกวงในด้วยครับเวลา Team Fight ก็ให้รอให้ฝ่ายเราเดินขึ้นไปสู้กับศัตรูก่อนแล้วเราคอยหลบอยู่ด้านหลังเพื่อนร่วมทีม รอให้เพื่อนร่วมทีมตีกับศัตรูจนพลังของศัตรูเหลือน้อยเมื่อไหร่ให้รีบกด Ultimate ใส่ศัตรูที่เลือดเหลือน้อยทันทีครับคุณก็จะได้ Kill รัวๆ ไม่ยากครับ เป็นสายที่เล่นแล้วเครียดน้อยที่สุดครับ เพราะไม่ต้องแบกทีมมาก เน้นหลบๆ ซ่อนๆ คอยดักซุ่มศัตรูอย่างเดียว ถ้าทีมคุณมีเพื่อนใช้นักฆ่าแล้วคุณเห็นเขาเอาแต่ฟาร์ม อย่าไปด่าเขาครับ เพราะถ้าให้เขาไปบวกกับศัตรูแบบซึ่งๆ หน้าจะกลายเป็นตัวแจกทองเปล่าๆ
+*เพิ่มเติม นักฆ่า ไม่ควรอยู่ทีมเดียวกับนักเวทย์ครับ เพราะนักเวทย์ตีป้อมช้า นักฆ่า ก็ไม่ควรพยายามตีป้อมมากเพราะเสี่ยงต้องบวกตัวๆ กับ แทงค์หรือไฟเตอร์ ซึ่งยากมากที่จะเอาตัวรอดได้ และในทีมไม่ควรมีนักฆ่าเกิน 1 คน ครับ เพราะ ป้อมจะพังหมดก่อนที่จะได้ออกมาสู้โชว์ปล่อย Ultimate เนื่องจากมัวแต่ฟาร์มจนป้อมไม่เหลือ และไม่ใช่ตัวละครที่จะแบกทีมได้ครับ ต่อให้คุณเก่งแค่ไหน ถ้าเพื่อนร่วมทีมอีก 4 คนของคุณไก่หมดโอกาสที่ทีมจะแพ้จะมีสูงมาก ต่อให้คุณได้ MVP ก็เถอะ
+วิธีเล่นนักยิง เริ่มเกมมาให้เน้นเฝ้าป้อมอย่างเดียวครับ รอยิงตัวมินเนี่ยนจากระยะรัศมีป้องกันในป้อมของเราอย่างเดียว ถ้าจะฟาร์มควรรอให้เลเวลอัพไปถึง 10 + ก่อนครับ จะได้ไม่เสียเวลา เพราะนักยิงฟาร์มช้าครับ ส่วนเวลาออกไปสู้ให้คอยโจมตีศัตรูจากวงนอกห้ามคลุกวงในเด็ดขาดครับ วงในซัดกันนัวๆ มั่วๆ ปล่อยให้เป็นหน้าที่ของนักสู้กับแทงค์แทนครับ เล่นนักยิงก็คอยยืนอยู่ข้างหลังนักสู้กับแทงค์อย่างเดียวครับ ส่วนเวลาปล่อย Ultimate ก็ให้ปล่อย Ultimate ในช่วงที่ด้านหน้าเรามีสายอื่นคอยปะทะด้านหน้าให้ Ultimate ก็จะไม่เสียของครับ
+วิธีเล่นซัพพอร์ต คือ ห้ามเข้าไปบวกสู้กับศัตรูตัวไหนสายไหนตัวต่อตัวเด็ดขาด ให้สู้แบบเป็นทีมไปกับเพื่อนเท่านั้นและเวลาสู้ให้คอยซ้อนอยู่ด้านหลังเพื่อนอย่างเดียวห้ามขึ้นไปอยู่ด้านหน้าเพื่อนร่วมทีมเด็ดขาด ไม่ว่าเพื่อนร่วมทีมจะเล่นสายไหนก็ตาม ให้ซ้อนอยู่ด้านหลังอย่างเดียวคอยเดินตามหลังเพื่อนแล้วปล่อยสกิลอย่างเดียวเท่านั้น เอาง่ายๆ เลยคือ ต้องซ้อนอยู่หลังสุดเลยครับ
+*เพิ่มเติม ซัพพอร์ต เป็นสายที่แบกทีมได้ดีที่สุดครับ เนื่องจาก Skill ของตัวละครสายนี้มันสามารถบัพได้ทั้งทีมครับ พูดง่ายๆ คือ ต่อให้เพื่อนร่วมทีมคุณไก่หมดแต่ ถ้าคุณเล่นสายนี้เก่งๆ ก็แบกไก่ชนะได้ครับ แต่อย่าไปหวังกับ MVP มากครับ เพราะมันตีเบามากๆ ครับ เน้นบัพให้ทีมอย่างเดียวครับ
+วิธีเล่นแทงค์ ไม่มีอะไรมากครับ บวกอย่างเดียวครับ ขึ้นไปนำอยู่แถวหน้าเลยครับ แต่ไม่ควรไปแบบเดี่ยวๆ ตัวคนเดียวนะครับ เพราะแทงค์สู้ตัวต่อตัวจะแพ้ไฟเตอร์ครับ แต่เวลาสู้เป็นทีมจะเก่งกว่าไฟเตอร์ครับ เป็นสายที่คนไม่ค่อยนิยมเล่นเท่าไหร่เพราะเล่นแล้วเครียดครับ เนื่องจากเป็นตัวแบกทีมต้องคอยบวกอยู่แถวหน้าสุด ต้องคอยดันป้อม จะหนีไปฟาร์มตีมอนในป่าก็ไม่ได้เพราะมันฟาร์มช้าสุดๆ ครับ
+ วิธีเล่นไฟเตอร์ เช่นเดียวกันกับแทงค์ครับ ไม่ต้องคิดอะไรมาก บวกแหลกอย่างเดียว ไฟเตอร์จะเก่งมากเวลาสู้ตัวต่อตัวกับสายอื่นทุกสาย แต่เวลาสู้เป็นทีมมักจะตายก่อนเพื่อนครับ เพราะไฟเตอร์เวลาโจมตีจะโจมตีได้ในระยะใกล้เท่านั้น แถมยังยืนเป็นเป้านิ่งอีกด้วย ในระดับแรงค์สูงๆ เลยไม่ค่อยมีใครนิยมใช้กันเท่าไหร่ครับ ส่วนใหญ่มักจะแย่งกันเล่นนักฆ่ากับนักยิงเพราะไม่ต้องแบกทีมมาก
+*เพิ่มเติมถ้าไม่ชอบบวกไม่ชอบแบกแนะนำให้เล่นสายอื่นครับ เพราะผมเห็นบางคนเลือกตัวสายนี้มา แต่ดันเอาแต่หนี เอาแต่ซ้อนหลัง มันจะไปมีประโยชน์อะไรกับทีมล่ะครับ แทงค์ ก็เช่นเดียวกัน ถ้าจะเล่นไฟเตอร์หรือแทงค์คุณต้องกล้าบวก กล้าอยู่แนวหน้าเท่านั้นครับ แล้วก็ไม่ควรฟาร์มมากด้วยครับ เพราะทั้งไฟเตอร์และแทงค์มันฟาร์มช้าครับ กว่าจะฟาร์มฆ่ามอนได้แต่ละตัว ทีมจะเสียเวลาดันป้อมไปเยอะครับ ถ้าจะฟาร์ม ควรรอให้เลเวลเกิน 10 ขึ้นไปก่อนครับ
+วิธีเล่นนักเวทย์ สายนี้ไม่สามารถกำหนดลักษณะจำเพาะเจาะจงได้ครับ เพราะแต่ละตัวละครมี Skill ที่แตกต่างกันมากๆ ครับ
+วิธีเล่นตัวละครสายผสม อันนี้สามารถเล่นแบบไหนก็ได้ครับตามที่ในสายกำหนดหมวดหมู่ไว้ เช่น นักสู้/นักฆ่า จะเล่นแนวนักสู้หรือแนวนักฆ่าก็ได้ครับ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Pantip</li>
+                                        <li>Category: MOBA</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Fortnite Battle Royale</h2>
+                                    <p class="item-intro text-muted">เทคนิคสำหรับมือใหม่ รู้ไว้ไม่เสียหาย!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://images5.alphacoders.com/968/968875.jpg" alt="" />
+                                    <p>fortnite battle royale เป็นเกมยิงแนว TPS ที่รองรับผู้เล่นได้มากถึง 100 คน เพื่อต่อสู้เอาชีวิตรอดเป็นแผนที่ขนาดกว้างใหญ่ ทุกเสี้ยววินาทีหมายถึงชีวิตที่คุณอาจถูกเขี่ยออกจากสนามแข่งขัน เร็วหรือช้าขึ้นอยู่กับฝีมือของผู้เล่นแต่ละคน ความโดดเด่นของระบบเกมที่มีระบบ Building ทำให้การเล่นต้องใช้สมองและไหวพริบมากขึ้น แต่สำหรับผู้เล่นมือใหม่การไปถึงจุดที่เรียกว่า “มือโปร” ต้องเก็บเกี่ยวประสบการณ์ตั้งแต่ระดับพื้นฐานไปจนถึงขั้นสูงอาจต้องใช้เวลานานพอสมควร ซึ่งคงไม่ใช่เรื่องยากหากมีความพยายามบางเรื่องควรรู้ไว้ไม่เสียหาย
+แผนที่ในเกม Fortnite เป็นแบบ Open-World มีขนาดกว้างใหญ่ประกอบด้วยเมืองต่างๆมากกว่า 15 เมือง แต่ละพื้นที่จะมีจุดดรอปของให้ผู้เล่นเก็บสะสมตั้งแต่อุปกรณ์ยาฟื้นฟูพลังชีวิต กระสุน และอาวุธ เมื่อกระโดดลงจากรถ Battle Bus คุณสามารถเลือกตำแหน่งที่จะดิ่งลงเพื่อเก็บของให้เร็วที่สุด ยกตัวอย่างเช่น Tomato Town เมืองที่ตั้งอยู่ในด้านตะวันออกเฉียงเหนือของแผนที่ใกล้ Anarchy Acres และ Wailing Woods เป็นพื้นที่ที่ได้รับความนิยม เนื่องจากเป็นจุดดรอปของที่พบเจออาวุธได้มากที่สุด และเสี่ยงต่อการปะทะกับผู้เล่นคนอื่นๆ กลับกันหากดิ่งลงในตำแหน่งพื้นที่นอกเมืองตามเนินเขาสามารถหลีกเลี่ยงการปะทะได้ แต่โอกาสพบจุดดรอปของน้อยกว่า
+เมื่อดิ่งลงถึงพื้นสิ่งแรกที่ผู้เล่นควรทำคือ วิ่งหาจุดดรอปของไม่ว่าจะเป็นทรัพยากรหรืออาวุธ บางครั้งของที่เก็บได้ไม่ใช่สิ่งที่ต้องการ ความใจร้อนเสี่ยงทำให้คุณจบเกมไว อย่าลืมว่า Battle Royale เป็นเกมแนวเอาชีวิตรอดอีกรูปแบบหนึ่งที่ต้องใช้การวางแผนสามารถเอาชนะได้โดยไม่จำเป็นต้องปะทะกันเสมอไป และการที่ตัวเกมออกแบบมุมมอง TPS ทำให้การซุ่มหรือหลบอยู่ในพื้นที่ต่างๆสามารถมองดูความเคลื่อนไหวจากภายนอกได้ง่าย หากรู้ตัวว่ากำลังเสียเปรียบด้านทรัพยากรและอาวุธ การรอให้ผู้เล่นคนอื่นๆ สู้กันแล้วคอยหาโอกาสเก็บ Loot ที่ตกอยู่จึงเป็นอีกทางเลือกที่ไม่ควรมองข้าม
+Fortnite Battle Royale ได้นำระบบ Building จากโหมดเกมหลัก Save the World เป็นจุดเด่นสร้างความแตกต่างจากเกมแนว Battle Royale ทั่วไป นอกจากการหาอาวุธและกระสุนปืน ทรัพยานั้นมีความสำคัญไม่แพ้กัน อาทิเช่น ไม้ อิฐ และโลหะ เพื่อใช้สร้างวัตถุของสิ่งปลูกสร้างพื่นฐาน ได้แก่ กำแพง เพดาน หลังคา หรือบันได
+การเก็บเกี่ยวทรัพยากรใช้หลักการของเกมแนว Survivor ผู้เล่นทุกคนจะได้รับขวานเป็นอาวุธเริ่มต้นสามารถใช้เก็บรวบรวมทรัพยากรด้วยการตีวัตถุเป้าหมายในระยะประชิดจากนั้นวัสดุทั้งหมดจะถูกเก็บรวบรวมไว้ในกระเป๋าแบบอัตโนมัติ อย่างไรก็ตามในระหว่างที่เรากำลังเก็บรวบรวมทรัพยากรจะทำให้เกิดเสียงตกกระทบ หากผู้เล่นคนอื่นอยู่ในระยะใกล้จะได้ยินเสียงดังกล่าว และมีโอกาสพบเจอได้
+สิ่งที่ควรรู้: เนื่องจากไม้เป็นทรัยากรที่หาได้ง่ายจึงเป็นเรื่องปกติที่ผู้เล่นจะพบเจอสิ่งปลูกสร้างที่สร้างด้วยไม้กระจัดจายตามพื้นที่ต่างๆ ถึงแม้สิ่งปลูกสร้างที่ทำจากไม้จะเปราะบางกว่าวัตถุที่ทำจากอิฐและโลหะ แต่ในช่วงเริ่มต้นเกมผู้เล่นส่วนใหญ่เลือกที่จะเก็บรวบรวมไม้มากกว่าเพื่อโอกาสการอยู่รอดให้นานที่สุด
+สิ่งปลูกสร้างประเภทกำแพง พื้น เพดาน และบันได แต่ละแบบใช้ทรัพยากร 10 หน่วยในการสร้าง โดยกำแพงหรืออาจจะเรียกผนังมีความสำคัญมากจนถูกตั้งค่า default ไว้ที่คีย์ลัด F1 เพื่อการตอบสนองของผู้เล่นสามารถสร้างกำแพงได้อย่างรวดเร็ว โดยเฉพาะผู้เล่นมือใหม่ควรฝึกให้คล่องเพราะเมื่อใดที่กระสุนพุ่งเข้าใส่ตัวละคร สิ่งแรกที่ควรสร้าง คือ กำแพง จะทำให้การแข่งขันง่ายขึ้น จากนั้นค่อยพัฒนาต่อยอดไปสู่การ Building ขั้นสูง โดยแนะนำให้ดูเทคนิคการเล่นจากเหล่าโปร streamer ชื่อดัง
+การเล่นเกม Fortnite Battle Royale ควรเลิกคิดถึงความสมจริงของระบบเกมเพราะองค์ประกอบหลายอย่างออกแนวการ์ตูนที่สามารถเกิดขึ้นได้จากการกระทำของผู้เล่น คุณสามารถสร้างสรรค์สิ่งต่างๆหรือทำลายได้อย่างอิสระตราบใดที่ยังมีชีวิตรอดอยู่ภายในเกมจนกว่าจะเหลือผู้เล่นที่แกร่งที่สุดเพียง 1 เดืยว โดยเฉพาะการ Buiding เป็นสิ่งสำคัญที่หลายครั้งมักนำไปสู่ชัยชนะ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Gamemonday</li>
+                                        <li>Category: Battle Royale</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">APEX Legends</h2>
+                                    <p class="item-intro text-muted">เทคนิคเล่นยังไงให้ชนะบ่อยขึ้น!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://images7.alphacoders.com/995/995789.jpg" alt="" />
+                                    <p>Main Weapon คือปืนหลักที่เราใช้ทำดาเมจ เช่น R – 301 /Flatline /G7 Scout ปืนที่ยิงได้ต่อเนื่อง มีกระสุนเยอะนั่นเอง
+Finish Weapon คือปืนรองที่สามารถ Burst Damage ได้ เช่น R – 99 /Peacekeeper /Wingman ปืนที่ทำดาเมจได้รวดเร็ว
+เราควรมีสองประเภทนี้ติดไว้เสมอ จะช่วยให้การเล่นของเราสมดุลมากขึ้น นอกจากจะใช้เปลี่ยนอาวุธมายิงแล้ว ยังช่วยประหยัดกระสุนอีกด้วย เพราะ Finish Weapon นั้นใช้กระสุนเพียง 1 – 2 ช่องก็พอแล้ว
+อย่ายืนยิงอยู่ที่เดิมซ้ำๆ เราสามารถปีนกำแพงเพื่อขึ้นที่สูง หรือเปลี่ยนที่กำบังได้ไม่ยาก และหนีเมื่อจำเป็นบางครั้งที่เราอยู่ตำแหน่งที่เสียเปรียบกว่า เราสามารถหนีเพื่อล่อให้เข้ามาจุดที่เราได้เปรียบก็ได้
+เวลาไปกับร่วมทีมนั้น ให้อยู่ห่างกัน อย่าติดกันมากเกินไป ให้อยู่ระยะห่างกันประมาณ 1 – 2 วิที่สามารถช่วยเหลือได้ทัน และที่สำคัญอย่าไปคนเดียว เพราะไม่ว่าคุณจะเก่งขนาดไหน การ 1-3 ในเกมนี้เป็นเรื่องที่ยากมากๆ พยายามเล่นแบบมี Team Work
+หลายคนเลือกมองข้ามระเบิด แต่จริงๆแล้ว ระเบิดเป็นสิ่งที่ควรพกไว้อย่างน้อย 1 ช่อง โดยเฉพาะดาวกระจาย Arc Star ที่มีประโยชน์มากๆ เพราะนอกจากจะสร้างดาเมจแล้ว ยังทำให้ศัตรูติด Slow ด้วย พยายามฝึกใช้ระเบิดเอาไว้
+Shield Cell คือของที่จำเป็นที่สุดในการปะทะ เพราะมีระยะเวลาการใช้งานที่สั้นที่สุด การหลบและใช้ Shield Cell เติมเลือด 25 ก่อนจะกลับไปลุยต่อเป็นเรื่องที่ดีกว่าออกไปตายทันที
+เมื่อมีการยิงกันเกิดขึ้น ถ้ารู้สึกได้ว่าอยู่ใกล้ คอยสังเกต Kill Feed ให้ดีๆ ถ้าเห็นว่าเริ่มมีคนล้ม หรือตาย เป็นช่วงโอกาสที่ดีที่สุดในการแจม เพราะศัตรูจะไม่ค่อยพร้อมสู้ต่อ และที่สำคัญ อย่าทำให้การปะทะยืดเยื้อ ถ้าฆ่าไม่ได้ก็ปล่อยไป เปลี่ยนตำแหน่งทันที ยิ่งประทะนาน ก็จะยิ่งเรียกทีมอื่นๆ มารุมยิงเรา ทำให้แพ้นั่นเอง
+อย่ายิงศัตรูทุกคนที่ขวางหน้า เพียงเพราะเพื่อน Ping บอก เราต้องดูว่าระยะนี้เราสามารถฆ่าได้หรือไม่ ไม่งั้นจะเป็นการเปิดตำแหน่งของทีมเราโดยไม่จำเป็น ควรจะบุกยิงโดยมีแผน และอยู่ในระยะที่สามารถฆ่าได้จริงๆ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Kochii.me</li>
+                                        <li>Category: Battle Royale</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 9-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Valorant</h2>
+                                    <p class="item-intro text-muted">วิธีตั้งค่ายังไงให้ยิงแม่น!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://wallpapercave.com/wp/wp5193152.jpg" alt="" />
+                                    <p>Valorant เกมแนว FPS จาก Riot Games ที่ต้องยอมรัยเลยว่าตอนนี้กระแสของเจ้าเกมนี้มาแรงแซงทางโค้งเกมแนวเดียวกันไปมากๆ เลยทีเดียว ด้วยรูปแบบการเล่นที่หลากหลายเพราะมีระบบสกิลเข้ามา แต่เดี๋ยวก่อนถึงตัวเกม Valorant จะมีระบบสกิลก็จริงแต่หัวใจสำคัญของการเล่นเกม FPS ก็คือ "การยิง" แน่นอนครับถ้าเรายิงคมกว่าอีกฝ่ายยังไงอัตราการชนะก็มากกว่าแน่นอน ซึ่งในจุดนี้การตั้งค่า Settings นั้นจึงสำคัญมาก ดังนั้นเราไปดูวิธีการตั้งค่า Settings ที่ TANX ผู้เล่นเกม FPS มากฝีมือกันดีกว่าครับ!
+โดยสิ่งที่ Tanx ให้ความสำคัญก็คือการตั้งค่าในส่วน Settings แถบจะทุกส่วนเลยก็ว่าได้ ซึ่งแน่นอนว่าแต่ละส่วนมันส่งต่อผลการเล่นของเราค่อนข้างมากทีเดียวครับ และ Tanx เขาให้ความสำคัญอะไรกับการตั้งค่าตรงไหนมันเป็นพิเศษละ แบ่งได้ประมาณ 3หัวข้อดังนี้ครับ
+ซึ่งที่สำคัญๆ เลยก็คือการปรับความเร็ว MOUSE นั่นเองครับ และก็ในส่วนของ MINIMAP ซึ่งในจุดนี้ต้องบอกเลยว่าแล้วแต่คนถนัดล้วนๆ แต่ TANX เขาแนะนำให้ตั้งค่าตามด้านล่างด้านนี้จะทำให้การเล่นของคุณเล่นได้ง่ายขึ้นกว่าเดิมมากๆ เลยทีเดียว ซึ่งผู้เขียนได้ลองมาแล้วบอกเลยว่ามีผลจริงๆ ครับโดยเฉพาะเรื่อง MINIMAP ซึ่งความเร็วเมาส์ที่ TANX เขาปรับไว้จะอยู่ที่ 0.4 และความเร็วเมาส์เวลาขึ้นสโคป (คลิกขวา) จะอยู่ที่ 0.7
+ซึ่งในจุดนี้ก็สำคัญไม่แพ้กัน เพราะมันจะมีผลต่อการปรับเป้าปืนของเรานั่นเองครับ ซึ่งแน่นอนว่าการปรับในจุดนี้จะทำให้เป้าปืนของเรามีประสิทธิภาพได้ดีที่สุด ซึ่ง TANX เขาปรับไว้ยังไง ก็ดูได้ตามภาพด้านล่างนี้เลยครับ
+ในหมวดนี้ก็สำคัญไม่แพ้หมวดอื่นๆ เลยครับเพราะมันจะส่งผลต่อการเล่นในเกมพอสมควร ซึ่งเราควรจะปรับตามภาพด้านล่างนี้เพื่อให้ FPS หรือ Frame rate นั้นสูง และจะทำให้เราสามารถเล่นในตัวเกมลื่นขึ้นมากๆ เลยทีเดียวครับ ส่วนเรื่องภาพเกมในหมวดย่อยอย่าง Graphics Quality นี้ถ้าใครคอมแรง TANX เขาแนะนำให้ปรับ Hight ไปเลย เพราะตัวเกมภาพจะสวยขึ้นมากๆ ครับและก็ไม่ได้ส่งผลต่อ FPS ของเราเท่าไหร่เลย
+ขึ้นชื่อว่าเป็นเกมแนว FPS แน่นอนว่าเรื่องเสียงถือว่าเป็นเรื่องสำคัญอันดับต้นๆ เลยก็ว่าได้เพราะถ้าคุณได้ยินเสียงของศัตรูก่อน ยังไงก็ได้เปรียบมากกว่าแน่นอนครับ ซึ่งในเกม Valorant นั้นการปรับในจุดนี้ก็มีผลต่อตัวเกมอยู่บ้าง (ถึงแม้จะไม่มากก็เถอะ) โดยสามารถปรับตาม TANX ได้ตาม ด้านล่างนี้เลยครับ!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: 4gamer</li>
+                                        <li>Category: FPS</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 10-->
+        <div class="portfolio-modal modal fade" id="portfolioModa20" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Overwatch</h2>
+                                    <p class="item-intro text-muted">เทคนิคเล่นให้เก่งขึ้นสำหรับคนอยากเป็นโปร!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://www.wallpapertip.com/wmimgs/241-2417388_overwatch-2-4k.jpg" alt="" />
+                                    <p>ก็เป็นที่ทราบกันว่า Deflect เป็นสกิลการปัดกระสุนของ Genji แต่ความสามารถนี้ทำได้มากกว่านั้นครับเพราะมันสามารถป้องกันการโจมตีได้ทุกประเภทเช่นท่าอัลติเมทของ Hanzo ก็สามารถป้องกันการโจมตีของมังกรได้หรือปัดความสามารถแบบอื่นเช่น Biotic Field ของ Soldier 76 ก็สามารถปัดให้ไปทิศทางอื่นได้ครับ
+จริงอยู่ที่ฮีโร่สาย Support คือการสนับสนุนเพื่อนร่วมทีมแต่ถึงอย่างนั้นพวกเขาก็ไม่มีสกิลเอาตัวรอดเท่าไหร่ดังนั้นเพื่อเป็นการช่วยเหลือซึ่งกันและกันเมื่อเห็นตัว Support ตกอยู่ในอันตรายจงช่วยเหลือเขาทันทีทั้งนี้ก็เพื่อให้ตัว Support ของเราสนับสนุนคนอื่นได้ต่อเนื่องโดยไม่ต้องเสียเวลาเกิดใหม่
+ฮีโร่บางตัวจะมีความสามารถเคลื่อนที่ได้รวดเร็วเช่น Tracer , Reaper , Genji , Lucio ซึ่งทั้งหมดนี้จะมีสกิลย่นระยะทางหรือเร่งความเร็ว ฉะนั้นเราจวใช้ความสามารถดังกล่าวให้เป็นประโยชน์สูงสุดเช่นการลอบโจมตีด้านหลังโดย Blink ของ Tracer หรือไต่กำแพงกับกระโดด 2 ชั้นของ Genji เพื่อเดินทางไปช่วยเพื่อนได้ไวขึ้นเพราะจะช่วยให้พลิกเกมได้เลยถ้าหากใช้ให้คล่อง
+Hitbox ใน Overwatch ถือว่ามีขนาดที่ใหญ่กว่าเกมอื่นมากทีเดียวฉะนั้นจึงเป็นเรื่องง่ายมากที่เราจะเล็งหัวยิง Headshot เพราะเราไม่จำเป็นต้องเล็งกลางหัวเป๊ะ ๆ ก็เข้าเป้าได้ฉะนั้นควรใช้ประโยชน์จากจุดนี้ให้มากที่สุด นอกจากนี้การยิงแบบ Headshot ยังเพิ่มความเสียหายเป็น 2 เท่าอีกด้วยเรียกว่ามีแต่ได้กับได้ครับ
+สเต็ปหากินของ Roadhog ก็คงไม่พ้นการ Hook เหยื่อมาหนึ่งคนแล้วกระหน่ำด้วยปืนลูกซองแต่สิ่งนั้นมันเป็นเทคนิคที่เชยไปแล้วซึ่งท่า Hook ของมันเราสามารถใช้ประโยชน์ได้หลายทางอย่างเช่น Hook ใส่ Bastion ในโหมดป้อมปืนเพื่อกดดันไม่ให้เปลี่ยนโหมดป้อมปืนได้บ่อย ๆ หรือการ Hook ศัตรูที่กำลังไล่ล่าเพื่อนก็สามารเซฟชีวิตเพื่อนได้หรือจะใช้มันทำให้ศัตรูตกเหวก็ได้ครับ
+ในเกมนี้จะมีจุดเกิดของ Health Kit กล่องยาที่สามารถเดินไปเก็บได้แต่ถ้าหากเป็นศัตรูได้ไปก็จะทำให้ทีมเสียเปรียบอย่างหนักดังนั้นวิธีแก้ทางง่าย ๆ ก็คือการวางกับดักบนจุดเกิดของกล่องยาพวกนั้นซึ่งในเกมนี้อนุญาตให้ทำได้ครับโดยใช้ตัว Junkrat วางระเบิดล่อให้ศัตรูเดินเข้ามาเก็บยาและโดนระเบิดทิ้งไปพร้อม ๆ กัน
+ในบางสถานการณ์ที่รู้สึกเข้าตาจนหรือความกดดันการสละชีพเพื่อทีมก็เป็นสิ่งที่ควรทำครับอย่างกรณีที่มี D.Va มาระเบิดตัวเองใส่และตัวเรากำลังเล่น Reinhardt อยู่ก็ให้เพื่อนร่วมทีมถอยหลังและให้เรารับความเสียหายคนเดียวหรือมี McCree ใช้ Deadeye แล้วเราเล่น Roadhog อยู่ก็อาจจะ Hook มันให้เสียจังหวะแล้วรับการโจมตีเต็ม ๆ ก็ได้ครับ
+กำแพงนำแข็งของ Mei นอกจากจะช่วยป้องกันความเสียหายหรือบล็อคทางได้แล้วมันยังช่วยเพิ่มความได้เปรียบทางพื้นที่แก่ทีมอีกด้วยครับเพราะตัวกำแพงที่สูงชันสามารถนำ Bastion ไปตั้งป้อมได้หรือให้ Thorbjorn วางป้อมปืนหรือทำให้ย่นระยะทางได้เช่นยกฮีโร่ขึ้นชั้น 2 ของอาคาร
+นี่ก็เป็นสิ่งเล็ก ๆ น้อยที่หลายคนมองข้ามไปเพราะตัว Junkrat มีสกิลทีเด็ดที่ตัวมันตายมันจะวางระเบิดใกล้ ๆ ตัวของมันและถ้าหากเดินเข้าไปใกล้มันก็จะระเบิดส่งความตายไปพร้อม ๆ กันดังนั้นเมื่อเห็นมันนอนตายก็ควรที่จะเดินหนีห่าง ๆ หรือในจังหวะชุลมุนก็ต้องระวังให้ดีครับ
+ใน Overwatch ก็จะมีแผนที่มากมายให้เลือกเล่นและมีสภาพพื้นที่แตกต่างกันไปซึ่งเราสามารถนำจุดนี้มาใช้ประโยชน์ให้ทีมได้เปรียบได้ครับอย่างการขึ้นที่สูงกับมุมอับเพื่อจัดการศัตรูในระยะไกลเมื่อเล่น Widowmaker หรือ Bastion ถ้าหากมีพื้นที่เป็นหุบเหวเยอะ ๆ ก็ใช้ Hook ของ Roadhog ลากให้ตกเหวตายได้เหมือนกันเป็นอีกวิธีจัดการศัตรแบบง่าย ๆ ไม่จำเป็นต้องปะทะกันตรง ๆ ครับ
+สำหรับ Tips สุดท้ายนี้ถ้าหากเห็นฮีโร่ Tank ฝ่ายเราวิ่งเข้ามาช่วยก็ควรที่ปล่อยให้มำหน้าที่ของเขาไปครับอย่างเช่นกางโล่เพื่อปกป้องเราก็ควรจะอยู่หลังโล่และยิงผ่านโล่ซึ่งสามารถยิงผ่านได้ครับเพราะนอกจากจะช่วยชีวิตแล้วเผลอ ๆ อาจจะยังได้ Kill อีกต่างหากและที่สำคัญตำแหน่งการยืนควรจะให้ Tank อยู่แถวหน้าสุดครับ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Videogamer</li>
+                                        <li>Category: MOBA</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 11-->
+        <div class="portfolio-modal modal fade" id="portfolioModa21" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Grand Theft Auto San Andreas</h2>
+                                    <p class="item-intro text-muted">เทคนิคจบเกมภายใน26นาที!</p>
+                                    <img class="https://c4.wallpaperflare.com/wallpaper/569/681/116/gang-crime-gta-san-andreas-wallpaper-preview.jpg65232" alt="" />
+                                    <p>กลายเป็นสถิติโลกของสาย Speedrun กันอีกครั้งกับเทคนิคแบบใหม่ที่ช่วยให้เล่นเกม GTA: San Andreas จบได้ภายในครึ่งชั่วโมง
+โดยเจ้าของสถิตินี้ก็คือ Powdinet ที่แสดงวิธีใหม่ในการเคลียร์เกมอย่างรวดเร็วอย่างที่ไม่มีใครคาดคิดมาก่อน และใช้ได้เฉพาะกับเกมในเวอร์ชั่น Windows Store เท่านั้น ซึ่งเขาได้เขียนวิธีการทำสถิติไว้อย่างละเอียดใน Reddit โดยใจความหลักที่ต้องทำก็คือหารถตำรวจให้เจอเร็วที่สุด เปิดภารกิจ Vigilante แล้วกดยกเลิก พร้อมสอดส่องหาพ่อค้ายาเพื่อปล้นเงินให้ได้ทีละมาก ๆ
+และจุดสำคัญอีกจุดคือต้องทำ Bug เปิดภารกิจ Vigilante ในระหว่างภารกิจของ Ryder ให้ได้ เพื่อให้เกมเกิดการ Bug จนสามารถข้ามมาฉากสุดท้ายได้สำเร็จ ซึ่ง Powdinet อธิบายว่า การทำแบบนี้จะเป็นการข้าม Script ทุกอย่างในเกมไปสู่ฉากสุดท้ายทันที! จนสามารถจบเกมได้ภายในระยะเวลาแค่ 25 นาที 52 วินาที หรือจะไปสู่ฉากอื่น ๆ ที่ต้องการในเกมได้เลย
+Grand Theft Auto San AndreasPowdinet ยังบอกอีกว่า เขาพยายามค้นหา Glitch ในลักษณะนี้เป็นเวลากว่าสามปีแล้ว ก่อนที่จะเจอเมื่อเดือนก่อน และใช้งานได้จริงเมื่อไม่นานนี้เอง เรียกว่านี่เป็นมิติใหม่ของการทำ Speedrun ของเกม GTA: Andreas และเชื่อว่าจะมีสถิติโลกที่ทำเวลาได้เร็วยิ่งกว่านี้ออกมาอีกแน่นอนครับ</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: Powdinet</li>
+                                        <li>Category: Open World</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 12-->
+        <div class="portfolio-modal modal fade" id="portfolioModa22" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Grand Theft Auto V/</h2>
+                                    <p class="item-intro text-muted">ความรู้สำหรับมือใหม่!</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://images7.alphacoders.com/439/439636.jpg" alt="" />
+                                    <p>เกร็ดความรู้จับฉ่ายสำหรับมือใหม่ GTA Online
+
+- GTA V อ่านว่า "จีทีเอ ไฟว์" ไม่ใช่ "จีทีเอ วี" (ยกเว้นคุณเรียก GTA IV ว่า "จีทีเอ ไอวี", ไฟนอล 13 ว่า "ไฟนอลแฟนตาซี เอ๊กซ์ไอไอไอ" , Black ops III "แบล๊คออป ไอ     ไอไอ")
+- หากไม่ต้องการไปไล่ฆ่าใคร พยายามอยู่ใน passive mode
+- ควรอยู่ใน passive mode ก่อนไปเข้าร่วมทำภารกิจ เพราะบางครั้งทำเสร็จออกมามีสิทธิโดนเพื่อนฆ่า เงินตกอีก
+- พยายามฝากเงินให้สม่ำเสมอ ป้องกันเงินตกเวลาตาย การฝากฝากจากมือถือได้เลย ไม่ต้องวิ่งหา ATM
+- อยากเล่นอะไร ให้กด join จากมือถือ โดยเลือกไอคอน quick job ทางซ้าย
+- การจะทำ Heist โดยเป็น host อย่างน้อยต้องมีบ้านระดับ High-end (ดูได้จากในเวปในมือถือ ราคาประมาณ2แสนขึ้นไป) เลเวลอย่างน้อย 12 Lester จึงจะติดต่อเข้ามา
+- หากทำ Heist ครบทั้ง 5 อันแล้ว(รวมsetup) ไม่ว่าจะเล่นในฐานะ host หรือ crew ก็ตาม จะปลดล็อคให้เราเลือก setup heist ใดๆก็ได้ในคอนโด
+- ถ้า Heist ใดๆเริ่มลงมือทำไปแล้ว สามารถยกเลิกได้โดยโทรหา Lester แต่เราจะไม่ได้ค่า setup คืน
+- ในการเล่น Heist สามารถข้ามการเดินทางยาวๆช่วงแรกได้ แต่มีเงื่อนไขคือ ทุกคนต้องอยู่บนรถคันเดียวกันและทุกคนต้องเลยเล่นภารกิจนั้นๆผ่านมาแล้ว (-4,000 บาททุกคนตอนจ่าย   เงิน)
+- Invite only session ถือว่ามีประโยชน์มาก เพราะหลุดยาก กันการโดนเกรียนได้ สะดวกเวลาต้องทำภารกิจกับเพื่อน อีกทั้งเป็นส่วนตัวด้วย
+- NPC ชอบติดต่อมาทางโทรศัพท์เพื่อให้ภารกิจเรา ภารกิจพวกนี้จะปลดล็อคตามเลเวล และเกมส์จะสุ่มมาให้เรื่อยๆ
+- ภารกิจที่ทำสำเร็จไปแล้วสามารถทำซ้ำได้ ที่ Online > jobs > rockstars created > mission
+- ดังนั้นถ้าคุณไม่เคยทำมากก่อน ต่อให้เลเวลถึงก็ไม่มีให้เลือกตรงนี้อยู่ดี
+- ภารกิจที่นิยมใช้ปั๊ม RP กันคือ Blow up 1 และ 2
+- การได้ภารกิจใหม่ๆมี 2 วิธีคือ 1. รอ NPC โทรหาเราเพื่อสุ่มมาให้ 2. ไป Join game โดยให้คนอื่นที่เคยทำแล้ว create mission นั้นๆ
+- หากเน้นการอัพเลเวลที่รวดเร็วให้เน้นทำ Mission แต่หากต้องการเงินที่มากกว่าให้ทำ Heist (แต่ก็ขึ้นกับคุณภาพเพื่อนร่วมทีมด้วย)
+- การหนีตำรวจ ให้พยายามขับ Offroad อย่ายิงโดยไม่จำเป็น และอาจต้องทำลายฮอในบางกรณี
+- การหนีตำรวจ ไม่จำเป็นต้องขับไปเรื่อยๆโดยไร้จุดหมาย แค่หลบอยู่จนดาวหมดก็พอแล้ว โดยผู้เล่นที่มีประสบการณ์จะมีที่หลบเงียบๆเยอะมาก
+- หากเราโดยสาร Kuruma ที่วิ่งหลบตำรวจอยู่ การยิงตำรวจขณะที่รถวิ่งจะเป็นการแสดงความ noob เพราะตำรวจจะ spawn เรื่อยๆอยู่แล้ว ควรยิงตำรวจแค่ตอนรถหยุด         หรือ ยิงแค่สิ่งที่ ต้องยิงเท่านั้น
+- เมื่ออยู่ใน Kuruma จะถือว่าค่อนข้างปลอดภัย ผู้เล่นที่มีประสบการณ์จะรู้ว่าเมื่อไหร่ควรยิงเมื่อไหร่ควรหยุด ขณะที่คนเริ่มเล่นใหม่ๆจะยิงแทบตลอดเวลา
+- นอกจากนี้ลักษณะเด่นของ noob อีกอย่างคือการปาระเบิดมั่วซั่ว ใช้ระเบิด, ปืนยิงระเบิด, sticky bomb แทบทุกสถานการณ์ และที่เลวร้ายที่สุดคือการปาระเบิดเล่นขณะ     โดยสารรถคน     อื่น หรือทำลายสิ่งที่ต้องขโมยเพียง       เพราะต้องการกำจัดศัตรูทีละมากๆ
+- หากตัวเองหนีตำรวจไม่พ้น ลองพยายามให้เพื่อนที่นั่งมาด้วยมาขับแทนดีกว่า
+- เกมส์นี้แทบจะจูงมือสอนเราในทุกๆเรื่อย พยายามอ่านสิ่งที่เกมสอนบริเวณมุมบนซ้าย ถ้าคุณไม่อ่านมันตอนนี้ อนาคตคุณก็ต้องไปถามคนอื่นที่หลังอยู่ดี (ซึ่งเสียเวลากว่า     มาก และเสี่ย     งดราม่า)
+- ทุกอย่างที่ถูก lock ด้วยเลเวล จะปลด lock ทั้งหมดเมื่อคุณเลเวล 120
+- เกราะซื้อตุนไว้ได้มากสุด 10 อันที่เลเวล 135
+- บ้านมีได้สูงสุด 3 หลัง (ซื้อหลังแรกได้ตอนเลเวล 5)
+- จำนวนกระสุนที่ถือได้ เพิ่มขึ้นตาม stats shooting
+- อยากให้ stats อะไรขึ้นไว ก็ทำสิ่งนั้นบ่อยๆ
+- เวลาทำภารกิจใดๆ เราจะยิงพวกเดียวกันไม่ได้ แต่อาวุธระเบิดใดๆสามารถทำอันตราเพื่อนของเราได้
+- ถ้ารถพังในภารกิจไม่ว่าจะด้วยเหตุผลใดๆ เมื่อออกมาจะโทรเคลมประกันได้เลย โดยไม่เสียเงิน
+- ระบบการติดดาวในเกมส์ หากอยู่บนยานพาหนะเดียวกัน ดาวจะขึ้นเท่ากันโดนยึดตามคนที่ดาวมากกว่าและหายพร้อมกันเสมอ(เช่น คุณเดินอยู่ไม่มีดาว ไปขึ้นรถเพื่อนที่ติด    3 ดาว ทันทีที่ขึ้นคุณจะติด 3 ดาวด้วย) สำหรับกรณีอื่นๆการติดดาวจะแยกกันทั้งหมด
+- เวลาโดนระดมยิงขณะอยู่บนรถ อย่าลืมกด x เพื่อก้มหัวหลบ เมื่อก้มแล้วโอกาสโดนยิงจะลดลงและทำให้เลือดค่อยๆ regen ขึ้นมา
+- ปัจจัยที่บ่งบอกว่าเวลารถตกจากที่สูงจะระเบิดหรือไม่ ท่าการตกสำคัญกว่าความสูง เช่น ถ้าตกจากที่สูงมากๆแต่เอาล้อลงรถยังอยู่ได้ ในขณะที่ถ้าตกเตี้ยๆแต่หงายท้องลง     รถจะระเบิด
+- ประสบการณ์ส่วนตัวเคยให้เพื่อนขับฮอมายก kuruma แล้วไปปล่อยจากบนฟ้าโคตรสูง สูงกว่าตึกอีก ปรากฎว่าบังคับกลางอากาศดีเอาล้อลงรถก็ไม่พัง ขณะเดียวกันไปขับ   kuruma ตก   ที่สูงปานกลางแต่หงายท้องรถดัน       ระเบิด
+- พื้นฐานของเรือที่ต้องจำไว้ตลอด 1. กด spacebar เพื่อปืนขึ้นเรือจะเร็วกว่าการกด F ให้ตัวละครหาทางขึ้นเองเสมอ
+- พื้นฐานของเรือที่ต้องจำไว้ตลอด 2. ถ้ากด F เพื่อออกจากเรือที่กำลังวิ่งอยู่ ตัวเราจะโดดลงน้ำ แต่ถ้าเรือจอดแล้วกด F ตัวละครจะยังยืนอยู่บนเรือ
+- พื้นฐานของเรือที่ต้องจำไว้ตลอด 3. เรือบางชนิดที่นั่งได้หลายๆคน ไม่จำเป็นต้องนั่งเสมอไป อาจเดินไปเดินมาเพื่อทรงตัวอยู่บนเรือได้
+- ทางลัดในเกมส์ส่วนมากมาจากการเชื่อ GPS น้อยๆ และวิ่งในทางที่เราอยากวิ่ง (ยิ่งเล่นไปนานๆจะมีทางลัดเยอะแยะ)</p>
+                                    <ul class="list-inline">
+                                        <li>Date: 20 October 2020</li>
+                                        <li>Credit: 	Suriya Rattana</li>
+                                        <li>Category: Open World</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        CLOSE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/jqBootstrapValidation.js"></script>
+        <script src="https://startbootstrap.github.io/startbootstrap-agency/assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="https://startbootstrap.github.io/startbootstrap-agency/js/scripts.js"></script>
+    </body>
+</html>
